@@ -2,17 +2,12 @@ package com.registroAPi.resgistroApi.Entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-public class Restponse {
+public class ServiceResult {
 
     @JsonIgnore
-    public Object object;
-
     public int status;
-
+    public Object object;
+    public String message;
     public String errorMessage;
-
-    public String successMessage;
-
-    public Exception ex;
-
+    
 }
